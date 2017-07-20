@@ -1,0 +1,26 @@
+package com.gmail.bizkit245;
+
+public class Triangle {
+
+	private double a;
+	private double b;
+	private double c;
+
+	public Triangle(double a, double b, double c) {
+		super();
+		this.a = a;
+		this.b = b;
+		this.c = c;
+	}
+
+	public Triangle() {
+		super();
+	}
+
+	public double getA() {
+		return a;
+	}
+
+	public void setA(double a) {
+		this.a = a;
+	}
