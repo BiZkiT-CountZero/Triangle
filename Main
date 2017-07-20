@@ -1,0 +1,23 @@
+package com.gmail.bizkit245;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("Enter the length of side a and press enter: ");
+		double a = sc.nextDouble();
+		System.out.print("Enter the length of side b and press enter: ");
+		double b = sc.nextDouble();
+		System.out.print("Enter the length of side c and press enter: ");
+		double c = sc.nextDouble();
+
+		Triangle tr1 = new Triangle(a, b, c);
+		tr1.area();
+		System.out.println(tr1);
+		sc.close();
+	}
+}
