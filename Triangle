@@ -24,3 +24,41 @@ public class Triangle {
 	public void setA(double a) {
 		this.a = a;
 	}
+
+	public double getB() {
+		return b;
+	}
+
+	public void setB(double b) {
+		this.b = b;
+	}
+
+	public double getC() {
+		return c;
+	}
+
+	public void setC(double c) {
+		this.c = c;
+	}
+
+	public void area() {
+		double sumab = a + b;
+		double sumac = a + c;
+		double sumcb = c + b;
+
+		if ((sumab > c && sumac > b) && sumcb > a) {
+			double semiperimeter = (a + b + c) / 2;
+			double area = Math.sqrt(semiperimeter * (semiperimeter - a) * (semiperimeter - b) * (semiperimeter - c));
+			System.out.println("Your triangle area = " + area);
+		} else {
+			System.out.println("Your triangle does not exist");
+		}
+
+	}
+
+	@Override
+	public String toString() {
+		return "Triangle [a=" + a + ", b=" + b + ", c=" + c + "]";
+	}
+
+}
